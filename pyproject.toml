@@ -1,0 +1,21 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+# Copyright (C) 2026 Flarial contributors
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "iris-port"
+version = "0.1.0"
+description = "Mechanical GLSL to HLSL port of Iris shader packs to the NWR shader-pack format 2"
+readme = "README.md"
+license = { text = "AGPL-3.0-or-later" }
+authors = [{ name = "Flarial contributors" }]
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+iris-port = "iris_port.cli:main"
+
+[tool.setuptools]
+packages = ["iris_port"]
